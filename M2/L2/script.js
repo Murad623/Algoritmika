@@ -67,7 +67,7 @@ class List{
     sortList(){
         this.tdList.sort((a,b) => {
             if(sortBool){
-                if(a[1].firstChild.innerText < b[1].firstChild.innerText){
+                if((a[1].firstChild.innerText).toLowerCase() < (b[1].firstChild.innerText).toLowerCase()){
                     return -1
                 }
                 else{
@@ -75,7 +75,7 @@ class List{
                 }
             }
             else{
-                if(a[1].firstChild.innerText > b[1].firstChild.innerText){
+                if((a[1].firstChild.innerText).toLowerCase() > (b[1].firstChild.innerText).toLowerCase()){
                     return -1
                 }
                 else{
