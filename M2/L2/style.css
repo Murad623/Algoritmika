@@ -24,6 +24,7 @@ body{
     border: none;
     height: 38px;
     width: 100%;
+    font-family: "Playpen Sans";
 }
 .inputText:focus,
 .inputText:active{
