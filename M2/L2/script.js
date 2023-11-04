@@ -22,7 +22,7 @@ class List{
         deleteToDo.classList = "deleteToDo"
         deleteToDo.alt = this.newToDoId
         deleteToDo.src = "./img/x_button_normal.svg"
-        toDoText.innerText = inputToDo.value;
+        toDoText.innerText = inputToDo.value.trim();
         todo.append(toDoText);
         todo.append(deleteToDo);
         this.tdList.push([this.newToDoId,todo])
@@ -81,7 +81,7 @@ class List{
                 else{
                     return 1
                 }
-            }
+            }3
         })
         this.pushList();
     }

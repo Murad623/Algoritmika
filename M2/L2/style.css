@@ -120,6 +120,8 @@ h1{
 .toDoText{
     width: 80%;
     margin: 10px 0 0 0;
+    word-wrap: break-word;
+    text-align: start;
 }
 .deleteToDo{
     margin-top: 10px;
