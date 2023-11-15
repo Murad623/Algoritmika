@@ -1,5 +1,7 @@
-let apikey = "28f0803f35fcbdcdc372dcd687b183aa";
-let url = "http://api.exchangerate.host/convert";
+// let apikey = "62bdcd2fe3e3adac06d10038e9dd99e7";
+let apikey = "c414195acfe82a70b3d52016";
+// let url = "http://api.exchangerate.host/convert";
+let url = "https://v6.exchangerate-api.com/v6/c414195acfe82a70b3d52016/latest/USD";
 let pFromTo = document.querySelector(".ft");
 let pToFrom = document.querySelector(".tf");
 let defaultCurrency = document.querySelector(".currency .selected");
@@ -51,7 +53,7 @@ async function converter(type) {
             }
             let response = await fetch(apiurl);
             let data = await response.json();
-
+            
             let apiurlft = `${url}?access_key=${apikey}&from=${from}&to=${to}&amount=1`;
             let response2 = await fetch(apiurlft);
             let data2 = await response2.json();
@@ -80,6 +82,9 @@ async function converter(type) {
                     input.value = data.result;
                 }
             }
+            console.log(data)
+            console.log("data")
+
         }
     }
     else{
